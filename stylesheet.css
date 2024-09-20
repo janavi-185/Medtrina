@@ -1,0 +1,300 @@
+* {
+
+    font-family: 'Malgun Gothic';
+
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+.logo{
+    width: 15% ;
+}
+.logo img {
+    margin-left: 20px;
+    height: 2.5cm;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1000;
+    height: 2.5cm;
+    background: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 5px;
+    box-shadow:0px 0px 4px rgba(0, 0, 0, 0.336);
+    
+}
+nav .content{
+    width: 70%;
+    display: flex;
+    justify-content:flex-end;
+    align-items:end;
+}
+
+
+
+
+nav ul li {
+    justify-content: space-between;
+    
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.content a {
+    
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #00353b;
+    align-items: flex-start;
+    transition: 0.5s;
+}
+
+.content li a:hover,
+.content li a.active{
+    color: rgb(131, 180, 196);
+}
+
+.content li a.active::after,
+.content li a:hover::after{
+    content: "";
+    width: 50%;
+    height: 3px;
+    background:rgb(131, 180, 196);
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+
+.Home {
+    
+    width: 100%;
+    height: 70vh;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 4px;
+    background-image: url('PICTURES/home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.Home .text{
+    font-size: 30px;
+    font-weight: 550;
+    text-align: justify;
+   
+}
+
+.clinics{
+    background-image: linear-gradient(to left,white, #e9f1f1);
+    width: 100%;
+    height: 110vh;
+    margin-bottom: 4px;
+}
+
+.clinics #clinic{
+    font-size: 30px;
+    font-weight: 600;
+    color: #00353b;
+} 
+
+.clinics #bone{
+    font-size: 20px;
+    color: #00353b;
+    font-weight: 550;
+    margin-left: 5%;
+}
+
+.clinics .data ,
+.clinics .datas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+} 
+
+.clinics .data .first,
+.clinics .datas .first{
+    height: 40vh;
+    width: 30%;
+    background-color: white;
+    border-bottom: 0.005mm solid rgb(49, 46, 46);
+    border-left: 0.005mm solid rgb(49, 46, 46);
+    margin: 30px 25px;
+    border-radius: 5px;
+    line-height: 5vh;
+}
+
+.clinics .data .first p,
+.clinics .datas .first p{
+    padding: 5px;
+    margin: 15px;
+}
+.lists {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #d6e6e6, #bde8f3);
+    background-size: cover;
+    background-position: center;
+    height: 22vh;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.lists #item {
+    font-family:'Times New Roman', Times, serif;
+    margin: 20px 50px;
+    letter-spacing: 0.2mm;
+}
+
+.lists #item span{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+.lists #item p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+#inquiry {
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to left, #d6e6e6, #88b8c5);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 4px;
+    display: flex;
+    filter: blur(5px);
+    transition: 0.5s;
+}
+#inquiry:hover{
+    filter: blur(0px);
+}
+.iii{
+    width: 60%;
+    font-size: 40px;
+    color: #155961;
+}
+#inquiry span{
+    text-align:start;
+    font-size: 25px;
+    color: #00353b;
+}
+.inq {
+    font-size: 30px;
+    color: #00353b;
+}
+.inquiry{
+    border: 1px solid rgb(58, 79, 97);
+    width: 40%;
+    box-shadow:0px 2px 4px #003c4b;
+    margin-right: 7%;
+}
+
+.inquiry input {
+    margin-left: 10px;
+    width: 70%;
+    height: 35px;
+    border-bottom: 1px solid;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    margin: 10px;
+    border-radius: 2px;
+    background: transparent;
+    margin: 5px;
+}
+
+
+
+
+
+
+::placeholder {
+    font-size: 15px;
+}
+
+.btn {
+    height: 8vh;
+    width: 70%;
+    border-radius: 5px;
+    background-color: #cce7ee;
+}
+
+.inquiry .btn a {
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.inquiry .btn a:hover {
+    height: 1.6cm;
+    width: 4cm;
+    font-size: 23px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.mains {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00353b;
+    color: white;
+}
+
+.mains .locate a{
+    text-decoration: none;
+    color: rgb(220, 253, 157);
+}
+.foot{
+    margin-top: 35px;
+    display: flex;
+    line-height: 30px;
+}
+.navigate{
+    transition: 5s;
+  
+}
+
+
+.navigate a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigate a:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+.privacy {
+    background-color: #00353b;
+    color: rgb(73, 114, 114);
+    text-align: center;
+    height: 70px;
+    
+}

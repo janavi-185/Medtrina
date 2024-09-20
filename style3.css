@@ -1,0 +1,228 @@
+* {
+
+    font-family: 'Malgun Gothic';
+
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+.logo img {
+    margin-left: 20px;
+    height: 2.5cm;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1000;
+    height: 2.5cm;
+    background: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 5px;
+    box-shadow:0px 0px 4px rgba(0, 0, 0, 0.336);
+    
+}
+
+nav ul li {
+    justify-content: space-between;
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.content a {
+    
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #00353b;
+    align-items: flex-start;
+    transition: 0.5s ease-in;
+}
+.content li a:hover,
+.content li a.active{
+    color: rgb(131, 180, 196);
+}
+
+.content li a.active::after,
+.content li a:hover::after{
+    content: "";
+    width: 50%;
+    height: 3px;
+    background:rgb(131, 180, 196);
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+
+nav .content{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.second{
+    height: 17vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url('PICTURES/second.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#063336 ;
+    margin-bottom: 5px;
+
+}
+.second b{
+    font-size: 30px;
+    color:#063336 ;
+}
+
+.container{
+    height: 160vh;
+    background-image: linear-gradient(to right, #ebebeb, #c4e6ee);
+    position: relative;
+    padding: 40px 100px; 
+
+}
+.contactus{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.container .info{
+    line-height: 40px;
+}
+
+.container .info span
+{
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(149, 151, 153);
+}
+
+.container .info h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin: 20px 0 20px 0;
+    font-weight: 150;
+}
+
+.container .info h3{
+    font-size: 30px;
+    margin: 20px 0 20px 0;
+    font-weight: 150;
+}
+
+.container .info .icons li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container .info .icons li i{
+    font-size: 14px;
+    padding-right:22px ;
+}
+
+.container .info .icons li p{
+    margin: 0;
+    color: rgb(118, 116, 114);
+}
+.contpage{
+    display: flex;
+}
+.container .contpage .map{
+    width: 40%;
+}
+.appoint{
+               
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    border: 1px solid rgb(61, 109, 109);
+    box-shadow: 0px 2px 4px rgb(61, 109, 109) ;
+    border-radius: 6px;
+}
+.appoint input{
+    margin: 10px;
+    width: 70%;
+    height: 1cm;
+    background: transparent;
+    border: 0.5px solid rgb(61, 109, 109);
+   
+    
+}
+.appoint form{
+    margin: 2% 10%;
+}
+.text{
+    font-size: 20px;
+    
+    color: #00353b;
+    margin-top: 25px;  
+}
+#sub{
+    margin-left: 10px;
+    height: 1cm;
+    width: 2cm;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.mains {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00353b;
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.mains .locate a{
+    text-decoration: none;
+    color: rgb(220, 253, 157);
+}
+.foot{
+    margin-top: 35px;
+    display: flex;
+    line-height: 30px;
+}
+.navigate{
+    transition: 5s;
+  
+}
+
+.navigate a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigate a:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+.privacy {
+    background-color: #00353b;
+    color: rgb(73, 114, 114);
+    text-align: center;
+    height: 70px;
+    line-height: 20px;
+}

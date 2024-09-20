@@ -1,0 +1,202 @@
+* {
+
+    font-family: 'Malgun Gothic';
+
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+.logo img {
+    margin-left: 20px;
+    height: 2.5cm;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1000;
+    height: 2.5cm;
+    background: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 5px;
+    box-shadow:0px 0px 4px rgba(0, 0, 0, 0.336);
+    
+}
+
+nav ul li {
+    justify-content: space-between;
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+}
+#page{
+    text-decoration: underline;
+}
+.content a {
+    
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #00353b;
+    align-items: flex-start;
+    transition: 0.5s ease-in;
+}
+.content li a:hover,
+.content li a.active{
+    color: rgb(131, 180, 196);
+}
+
+.content li a.active::after,
+.content li a:hover::after{
+    content: "";
+    width: 50%;
+    height: 3px;
+    background:rgb(131, 180, 196);
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+
+nav .content{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+
+
+.second{
+    height: 17vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url('PICTURES/second.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#00353b ;
+    margin-bottom: 5px;
+    
+}
+.second b{
+    font-size: 30px;
+    color:#21767e ;
+}
+#part2{
+    background-color:rgb(189, 206, 218) ;  
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+}
+.part1{
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px 10px 20px;
+    background-color: white;
+    margin-top: 15px;
+    
+}
+.contpage{
+    display: flex;
+}
+
+.new{
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.new img{
+    margin-left:10%;
+    margin-top: 10%;
+}
+.news{
+    width: 60%;
+    line-height: 5vh;
+    font-size: 20px;
+    background-color: white;
+    margin-top: 40px;
+}
+.news b{
+    color: rgb(2, 123, 172);
+    font-size: 40px;
+    
+}
+.news p{
+    font-size: 30px;
+}
+.part2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    background-color: rgb(189, 206, 218);
+}
+.text{
+    line-height: 5vh;
+    font-size: 20px;
+    background-color: white;
+    margin:10px 20px 10px 20px;
+
+}
+.text p{
+    font-size: 30px;
+}
+#text{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.mains {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00353b;
+    color: white;
+    font-size: 15px;
+}
+.mains .locate a{
+    text-decoration: none;
+    color: rgb(220, 253, 157);
+}
+.foot{
+    margin-top: 35px;
+    display: flex;
+    line-height: 30px;
+}
+.navigate{
+    transition: 5s;
+  
+}
+
+.navigate a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigate a:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+.privacy {
+    background-color: #00353b;
+    color: rgb(73, 114, 114);
+    text-align: center;
+    height: 70px;
+    line-height: 20px;
+}

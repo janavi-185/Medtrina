@@ -1,0 +1,187 @@
+* {
+
+    font-family: 'Malgun Gothic';
+
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+.logo img {
+    margin-left: 20px;
+    height: 2.5cm;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1000;
+    height: 2.5cm;
+    background: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 5px;
+    box-shadow:0px 0px 4px rgba(0, 0, 0, 0.336);
+    
+}
+
+nav ul li {
+    justify-content: space-between;
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.content a {
+    
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #00353b;
+    align-items: flex-start;
+    transition: 0.5s ease-in;
+}
+.content li a:hover,
+.content li a.active{
+    color: rgb(131, 180, 196);
+}
+
+.content li a.active::after,
+.content li a:hover::after{
+    content: "";
+    width: 50%;
+    height: 3px;
+    background:rgb(131, 180, 196);
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+
+nav .content{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.second{
+    height: 17vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url('PICTURES/second.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#063336 ;
+    margin-bottom: 5px;
+
+}
+.second b{
+    font-size: 30px;
+    color:#063336 ;
+}
+
+.doctors{
+    background-image: linear-gradient(to right, #d6e6e6, #b6d6e0,#6eaabb);
+    width: 100%;
+    height: 120vh;
+}
+.div1, .div2{
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    margin-left: 2%;
+
+}
+.doct {
+    border: #063336;
+    width: 30%;
+    height:50vh ;
+    margin: 40px 10px;
+    background-color: white;
+    box-shadow:0px 2px 4px #00353b;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.doct img {
+    height:40vh;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+.div1 .doct:hover
+, .div2 .doct:hover{
+    box-shadow:0px 8px 12px #00353b;
+}
+.doct span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.doct p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div1 .doct #field,
+ .div2 .doct #field{
+    font-size: 20px;
+    font-weight: 800;
+    color: #324b52;
+ }
+.mains {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00353b;
+    color: white;
+}
+
+.mains .locate a{
+    text-decoration: none;
+    color: rgb(220, 253, 157);
+}
+.foot{
+    margin-top: 35px;
+    display: flex;
+    line-height: 30px;
+}
+.navigate{
+    transition: 5s;
+  
+}
+
+
+.navigate a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigate a:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+.privacy {
+    background-color: #00353b;
+    color: rgb(73, 114, 114);
+    text-align: center;
+    height: 70px;
+    
+}
